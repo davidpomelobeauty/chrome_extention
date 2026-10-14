@@ -1,0 +1,32 @@
+{
+  // --- 에디터 기본 설정 ---
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": false,
+  "editor.inlineSuggest.enabled": false,
+  "editor.tabSize": 2,
+  // "editor.quickSuggestions": {
+  // "comments": "off",
+  // "strings": true,
+  // "other": "on"
+  // },
+
+  // ---- Deno 설정 ---
+  "deno.enable": true, // 프로젝트 전반 Deno 기능 활성화
+  "deno.lint": true,
+  "deno.suggest.imports": true,
+
+  // --- Svelte 설정 ---
+  "svelte.enable-ts-plugin": false,
+  "svelte.plugin.svelte.format.enable": true,
+
+  // --- Json 설정 ---
+  "json.format.keepLines": true,
+
+  // --- 언어별 개별 설정 (Svelte) ---
+  // "[svelte]": {
+  // "editor.defaultFormatter": "svelte.svelte-vscode"
+  // },
+
+  "emmet.showSuggestionsAsSnippets": true
+}

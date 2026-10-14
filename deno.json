@@ -1,0 +1,54 @@
+{
+  "tasks": {
+    "dev": "deno run -A npm:vite dev --open",
+    "build": "deno run -A npm:vite build",
+    "preview": "deno run -A npm:vite preview",
+    "check": "deno run -A npm:svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "deno run -A npm:svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
+    "lib": ["dom", "dom.iterable", "deno.ns"],
+    "types": ["npm:@types/chrome"]
+  },
+  "nodeModulesDir": "auto",
+  "allowScripts": {
+    "allow": [
+      "npm:@parcel/watcher@2.6.0"
+    ],
+    "deny": []
+  },
+  "unstable": ["fmt-component"],
+  "lint": {
+    "exclude": ["node_modules/", "dist/", "build/"],
+    "rules": {
+      "tags": ["recommended"],
+      "include": [
+        "eqeqeq",
+        "no-eval",
+        "no-sparse-arrays",
+        "no-throw-literal",
+        "camelcase",
+        "guard-for-in",
+
+        "verbatim-module-syntax",
+        "no-external-import",
+        "explicit-function-return-type",
+        "no-sync-fn-in-async-fn"
+      ]
+    }
+  },
+  "fmt": {
+    "exclude": ["node_modules/", "dist/", "build/"],
+    "useTabs": false,
+    "indentWidth": 2,
+    "lineWidth": 120,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "semiColons": true,
+    "trailingCommas": "onlyMultiLine",
+    "quoteProps": "asNeeded",
+    "useBraces": "always"
+  }
+}
