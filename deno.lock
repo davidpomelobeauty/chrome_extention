@@ -1332,6 +1332,9 @@
       "integrity": "sha512-msJxIvYDYcoNL+PJsu+7qmpDWsYmAxTY+2TNYXXF0hzBzBk0BMecOqDOG/EckUoKCuKwObfbugIl8QpqHDXeFA=="
     }
   },
+  "redirects": {
+    "https://deno.land/": "https://deno.com/"
+  },
   "workspace": {
     "dependencies": [
       "npm:@types/chrome@*"

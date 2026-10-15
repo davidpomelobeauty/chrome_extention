@@ -3,8 +3,14 @@
   "name": "Deno Svelte5 Extension",
   "version": "1.0.0",
   "description": "Deno v2와 Svelte 5로 만드는 크롬 확장 프로그램",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+  },
   "action": {
     "default_popup": "index.html"
-  },
-  "permissions": ["storage"]
+  }
 }
