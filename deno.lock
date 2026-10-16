@@ -9,6 +9,7 @@
     "npm:@tsconfig/svelte@^5.0.8": "5.0.8",
     "npm:@types/chrome@~0.3.5": "0.3.5",
     "npm:@types/node@^24.13.3": "24.19.2",
+    "npm:cash-dom@^8.1.5": "8.1.5",
     "npm:svelte-check@^4.7.6": "4.7.6_svelte@5.57.2_typescript@6.0.3",
     "npm:svelte@^5.57.0": "5.57.2",
     "npm:tailwindcss@^4.3.3": "4.3.3",
@@ -831,6 +832,9 @@
     "boolbase@1.0.0": {
       "integrity": "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
     },
+    "cash-dom@8.1.5": {
+      "integrity": "sha512-/BS05CfzyHR5xT2ksKj1sDLPaOv5rSmIwoGxNgdKwUtnIuiJ5neMxVEmZxvfyJiSjGbOMD0Lwe+9v+fszDqHew=="
+    },
     "chokidar@4.0.3": {
       "integrity": "sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==",
       "dependencies": [
@@ -1336,9 +1340,6 @@
     "https://deno.land/": "https://deno.com/"
   },
   "workspace": {
-    "dependencies": [
-      "npm:@types/chrome@*"
-    ],
     "packageJson": {
       "dependencies": [
         "npm:@crxjs/vite-plugin@3",
@@ -1349,6 +1350,7 @@
         "npm:@tsconfig/svelte@^5.0.8",
         "npm:@types/chrome@~0.3.5",
         "npm:@types/node@^24.13.3",
+        "npm:cash-dom@^8.1.5",
         "npm:svelte-check@^4.7.6",
         "npm:svelte@^5.57.0",
         "npm:tailwindcss@^4.3.3",

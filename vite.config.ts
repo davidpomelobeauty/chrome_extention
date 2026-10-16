@@ -20,7 +20,7 @@ export default defineConfig({
   resolve: {
   // 앞서 deno.json에서 설정한 경로 별칭(#lib)을 Vite 빌드 타임에도 매핑해 줍니다.
     alias: {
-      '#lib': path.resolve(__dirname, './src/lib/index.js'),
+      '#lib': path.resolve(__dirname, './src/lib/index.ts'),
       '@': path.resolve(__dirname, './src'),
     }
   }
