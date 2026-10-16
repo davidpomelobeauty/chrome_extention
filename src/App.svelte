@@ -20,7 +20,7 @@ async function test() {
 function logic() {
   const _: typeof cash = cash;
 
-  // const c = _('.product-detail-container');
+  const c = _('.product-detail-container');
   alert(_);
 
   const headings = document.querySelectorAll('h1');
@@ -37,14 +37,17 @@ async function exec() {
       return;
     }
 
+    const response = await chrome.tabs.sendMessage(tab.id, { action: 'TEST', tabId: tab.id });
+
+    /*
     const searchResult = await chrome.scripting.executeScript({
       target: { tabId: tab.id },
-      func: logic,
+      func: function () {},
     });
-    result = searchResult?.[0]?.result ?? [];
+    */
+    // result = searchResult?.[0]?.result ?? [];
   } catch (error) {
-    console.error('DOM 접근 실패:', error);
-    errorMessage = '웹페이지가 완전히 로딩되지 않았거나, 보안 페이지(예: 크롬 설정/웹스토어)입니다.';
+    console.error('실패:', error);
   }
 }
 </script>
