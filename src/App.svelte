@@ -29,7 +29,6 @@ function logic() {
 
 async function exec() {
   errorMessage = '';
-
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     if (!tab || !tab.id) {

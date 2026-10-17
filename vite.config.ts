@@ -30,5 +30,9 @@ export default defineConfig({
       // ⚡ 무거운 캐시 및 노드 폴더를 감시 대상에서 완전히 제외합니다.
       ignored: ['**/node_modules/**', '**/.deno/**'],
     },
+    // 1. Vite의 HMR 연결이 끊겼을 때 브라우저가 스스로 풀 리로드하는 것을 방지
+    hmr: {
+      overlay: false, // 에러 오버레이 끄기 (선택)
+    },
   },
 });
